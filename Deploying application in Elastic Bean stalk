@@ -1,0 +1,25 @@
+#USING ELASTIC BEANSTALK TO DEPLOY OUR APPLICATION.
+Now we deploy the docker file in Elastic Beanstalk.
+
+Step1(Configure environment):
+In this step we select the "Web Server Environment" as the environment, then we specify the name of the application. Then we give the environment name.
+We choose platform as "Managed platform" and choose platform as "Docker".
+Then we choose "upload code" option.
+In the presets we choose single instance(free tier eligible).
+
+Step2(Configure service access):
+Here we specify service role, EC2 keypair, EC2 instance profile.
+
+Step3(Set up networking, database, and tags - optional):
+This step is optional however we can specify the VPC, Subnets, Database specifications.
+
+Step4(Configure instance traffic and scaling - optional):
+This step is also optional. Here we can specify root volume, Amazon CloudWatch monitoring, Instance metadata service (IMDS), EC2 security groups, Auto scaling group, and some more.
+
+Step5(Configure updates, monitoring, and logging):
+This step has Health reporting, Health event streaming to CloudWatch Logs, Managed platform updates, Email notifications, Rolling updates and deployments, Configuration updates, Deployment preferences, Platform software, S3 log storage, Instance log streaming to CloudWatch logs, Environment properties.
+
+Step6(Review):
+This step is the review step. Here we can view all our specifications, requirements and once after reviewing we can submit to create the application.
+
+Once after our application is successfully deployed we get an URL of the application. By pasting that in the browser, we can access the game "2048".
