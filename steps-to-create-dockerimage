@@ -1,1 +1,6 @@
+#To build image.
 sudo docker build -t 2048-game .
+#Now we check the images created.
+sudo docker images
+#To build a container from the image
+sudo docker run -d -p 80:80 <image id>
